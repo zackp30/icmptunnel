@@ -160,7 +160,7 @@ void run_tunnel(char *dest, int server)
 
   fd_set fs;
 
-  tun_fd = tun_alloc("tun0", IFF_TUN | IFF_NO_PI);
+  tun_fd = tun_alloc("ic0", IFF_TUN | IFF_NO_PI);
 
   printf("[DEBUG] Starting tunnel - Dest: %s, Server: %d\n", dest, server);
   printf("[DEBUG] Opening ICMP socket\n");
